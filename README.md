@@ -11,8 +11,7 @@ Generally, for me, this will be stored in ~/.local/bin you will need to ensure t
 ### wt-sync
 
 This script is meant to handle untracked files while using git worktrees.
-If you have files that you do not want to check into source control and have a repository that is utilizing worktrees
-Steps to take
+If you have files that you do not want to check into source control and have a repository that is utilizing worktrees you can follow the steps below:
 
 ```
 git clone --bare $repository $repositoryDir
