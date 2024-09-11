@@ -9,3 +9,11 @@ selected=$(\
   | fzf --multi --reverse --tmux --prompt="Select worktree to update: " --preview-window=down:50%)
 
 rsync -r $working_dir/untrackedfiles/ $selected
+
+if [ -d $selected ]; then
+  pushd $selected
+  if [ -f "package.json" ]; then
+    npm install
+  fi
+  popd
+fi
