@@ -17,7 +17,7 @@ If you have files that you do not want to check into source control and have a r
 git clone --bare $repository $repositoryDir
 cd $repositoryDir
 mkdir untracked
-# Add files to the untracked dir that you want to be consistent between worktrees
+# Add files to the untracked dir that you want to be consistent between worktrees this can and should match the directory structure of $repository@main
 # Navigate back to $repositoryDir (cd $repositoryDir)
 wt-sync
 # This will open up fzf with all of your active worktrees
