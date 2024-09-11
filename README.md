@@ -23,7 +23,8 @@ wt-sync
 # This will open up fzf with all of your active worktrees
 # Search for the worktree you want to update, select it (tab and enter)
 # And you should be all set
+```
 
 ### tmux-sessionizer
-This is blatently taken from [theprimeagen](https://github.com/ThePrimeagen/.dotfiles/blob/master/bin/.local/scripts/tmux-sessionizer)
-```
+
+This is blatantly taken from [theprimeagen](https://github.com/ThePrimeagen/.dotfiles/blob/master/bin/.local/scripts/tmux-sessionizer)
