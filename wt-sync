@@ -1,0 +1,11 @@
+#/bin/bash
+
+working_dir=$(pwd)
+
+selected=$(\
+  git worktree list\
+  | awk '{print $1}'\
+  | xargs -n 1\
+  | fzf --multi --reverse --tmux --prompt="Select worktree to update: " --preview-window=down:50%)
+
+rsync -r $working_dir/untrackedfiles/ $selected
